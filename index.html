@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>Memory game</title>
+</head>
+<body>
+  <div class="container">
+    <main class="main">
+      <div class="game-board">
+        <div class="timeBoard">
+          <div class="moves">Moves: 0</div>
+          <div class="time">Time: 0:00</div>
+        </div>
+        <div class="cards"></div>
+        <div class="infoBoard">
+          <div class="footer__data">
+            <span class="footer__year">© 2022</span>
+            <a href="https://github.com/andre-sm" class="footer__github-link">github</a>
+          </div>
+          <a href="https://rs.school/js/" class="footer__school-link"><i class="footer__rss-logo"></i></a>
+        </div>
+      </div>
+      <div class="modal-start-game show">
+        <button class="btn play-btn">
+          <span>Play</span>
+        </button>
+      </div>
+      <div class="modal-game-over">
+        <div class="win">
+          <img src="./assets/img/you-win.png" alt="You win">
+        </div>
+        <div class="score-board">
+          <div class="score-title">Score board</div>
+          <div class="score-table-title">
+            <div class="score-titles score-place">Place</div>
+            <div class="score-titles score-moves">Moves</div>
+            <div class="score-titles score-time">Time</div>
+            <div class="score-titles score-date">Date</div>
+          </div>
+          <div class="results">
+
+          </div>
+          <button class="btn play-again-btn">
+            <span>Repeat</span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="index.js"></script>
+</body>
+</html>
